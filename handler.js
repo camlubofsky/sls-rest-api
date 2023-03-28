@@ -79,7 +79,6 @@ module.exports.deleteNote = async (event, context, cb) => {
 };
 
 module.exports.getNotes = async (event, context, cb) => {
-  console.log(JSON.stringify(event));
   try {
     const params = {
       TableName: NOTES_TABLE_NAME,
